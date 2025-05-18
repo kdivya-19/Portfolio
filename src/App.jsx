@@ -175,7 +175,7 @@ function App() {
 
         {/* About Section */}
         <section id="about" onMouseEnter={() => setHoveredSection('about')} onMouseLeave={() => setHoveredSection(null)} className="min-h-[80vh] md:h-screen flex flex-col items-center">
-          <div className="flex flex-col justify-center items-center gap-9 p-1 md:mt-10 hover:bg-white/10 transition-all rounded-xl w-full mr-5">
+          <div className="flex flex-col justify-center items-center gap-9 p-1 md:mt-10 hover:bg-white/10 transition-all rounded-xl w-full md:mr-5">
             <h2 className="text-2xl font-bold mt-6 text-center">My Story</h2>
             <img src={MyPhoto} alt='Profile' className='h-40 w-28 items-center rounded-md' />
             <div className="flex justify-center px-4 items-center mb-5 text-white/75">
@@ -239,7 +239,7 @@ function App() {
         <section id="projects" onMouseEnter={() => setHoveredSection('projects')} onMouseLeave={() => setHoveredSection(null)} className="min-h-[80vh] md:min-h-screen flex flex-col items-center space-y-4 md:space-y-14">
           <h2 className="md:hidden text-2xl font-bold mb-8 mt-5 text-center">Projects</h2>
           {/* Project 1 */}
-          <div className="w-full mr-5">
+          <div className="w-full">
             <a href="https://kdivya-19.github.io/Currency-Converter/" target='_blank' rel="noopener noreferrer">
               <div className="flex flex-col md:flex-row w-full gap-3 p-2 hover:bg-white/10 group cursor-pointer hover:scale-105 hover:shadow-lg transition-all rounded-xl">
                 <div className="w-full md:w-1/3 mb-4 order-2 md:order-1 md:mb-0 flex justify-center md:justify-start md:mt-4">
