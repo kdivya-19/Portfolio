@@ -107,7 +107,7 @@ function App() {
       )}
 
       {/* Left Sidebar - Hidden on mobile */}
-      <div className="hidden md:flex fixed top-0 left-0 mt-[9%] ml-16 h-screen w-1/2 flex-col text-gray-400 text-xl font-normal">
+      <div className="hidden md:flex fixed top-0 left-0 mt-[7%] ml-16 h-screen w-1/2 flex-col text-gray-400 text-xl font-normal">
         <h1 className='underline decoration-yellow-400 text-white text-5xl font-bold '>Divya Kandhakula</h1>
         <div className="flex items-center mt-3">           
           <span className="text-gray-100 text-xl">Aspiring Software Engineer </span>
@@ -141,7 +141,7 @@ function App() {
             );
           })}
         </div>
-        <div className="flex items-center gap-7 mt-20 ml-4">
+        <div className="flex items-center gap-7 mt-14 ml-4">
           <div className="flex bg-gray-600 rounded-full p-2">
             <a href="https://github.com/kdivya-19" target="_blank" rel="noopener noreferrer">
               <FaGithub className='w-8 h-8 text-green-300' />
@@ -166,7 +166,7 @@ function App() {
       </div>
 
       {/* Right Content - Full width on mobile */}
-      <div className="w-full md:w-3/5 md:ml-auto px-2 md:pl-20 text-white space-y-20 md:space-y-24 md:space-y-reverse ">
+      <div className="w-full md:w-3/5 md:ml-auto px-2 md:pl-20 text-white space-y-20 md:space-y-32 md:space-y-reverse ">
         {/* Mobile Header - Only visible on mobile */}
         <div className="md:hidden text-center mb-8 ">
           <h1 className='underline decoration-yellow-400 text-white text-3xl font-bold mb-2'>Divya Kandhakula</h1>
@@ -175,11 +175,11 @@ function App() {
 
         {/* About Section */}
         <section id="about" onMouseEnter={() => setHoveredSection('about')} onMouseLeave={() => setHoveredSection(null)} className="min-h-[80vh] md:h-screen flex flex-col items-center">
-          <div className="flex flex-col justify-center items-center gap-9 p-1 md:mt-10 hover:bg-white/10 transition-all rounded-xl w-full">
-            <h2 className="text-2xl font-bold mt-8 text-center">My Story</h2>
+          <div className="flex flex-col justify-center items-center gap-9 p-1 md:mt-10 hover:bg-white/10 transition-all rounded-xl w-full mr-5">
+            <h2 className="text-2xl font-bold mt-6 text-center">My Story</h2>
             <img src={MyPhoto} alt='Profile' className='h-40 w-28 items-center rounded-md' />
             <div className="flex justify-center px-4 items-center mb-5 text-white/75">
-              <p className='text-base'>I am a Computer Science student with expertise in web technologies and a strong foundation in Python, JavaScript, Java, HTML, and CSS. I have experience developing applications such as a machine learning-powered vehicle number plate recognition system using Python and Flask, as well as responsive web applications using React, Tailwind CSS, and HTML.
+              <p className='text-[15px]'>I am a Computer Science student with expertise in web technologies and a strong foundation in Python, JavaScript, Java, HTML, and CSS. I have experience developing applications such as a machine learning-powered vehicle number plate recognition system using Python and Flask, as well as responsive web applications using React, Tailwind CSS, and HTML.
                   I am passionate about problem-solving, building user-friendly and responsive applications, and contributing to dynamic teams. Eager to learn new technologies and looking for opportunities to grow and kickstart my career in software development.</p>
             </div>
           </div>
@@ -188,7 +188,7 @@ function App() {
         {/* Skills Section */}
         <section id="skills" onMouseEnter={() => setHoveredSection('skills')} onMouseLeave={() => setHoveredSection(null)} className="min-h-[80vh] md:h-screen flex flex-col justify-center">
           <h2 className="md:hidden text-2xl font-bold mt-8 mb-5 text-center">Skills</h2>
-          <div className="flex flex-col w-full justify-center items-center gap-4 pb-5 hover:bg-white/10 transition-all rounded-xl">
+          <div className="flex flex-col justify-center items-center gap-4 pb-5 hover:bg-white/10 transition-all rounded-xl w-full">
             <div className="flex flex-col justify-center items-center mt-2 gap-5">
               <h1 className='text-xl font-semibold mb-4'>Languages-Known</h1>
               <div className="flex gap-5 justify-center items-center">
@@ -236,10 +236,10 @@ function App() {
         </section>
 
         {/* Projects section */}
-        <section id="projects" onMouseEnter={() => setHoveredSection('projects')} onMouseLeave={() => setHoveredSection(null)} className="min-h-[80vh] md:h-[250vh] flex flex-col items-center space-y-4 md:space-y-14">
+        <section id="projects" onMouseEnter={() => setHoveredSection('projects')} onMouseLeave={() => setHoveredSection(null)} className="min-h-[80vh] md:min-h-screen flex flex-col items-center space-y-4 md:space-y-14">
           <h2 className="md:hidden text-2xl font-bold mb-8 mt-5 text-center">Projects</h2>
           {/* Project 1 */}
-          <div className="w-full ">
+          <div className="w-full mr-5">
             <a href="https://kdivya-19.github.io/Currency-Converter/" target='_blank' rel="noopener noreferrer">
               <div className="flex flex-col md:flex-row w-full gap-3 p-2 hover:bg-white/10 group cursor-pointer hover:scale-105 hover:shadow-lg transition-all rounded-xl">
                 <div className="w-full md:w-1/3 mb-4 order-2 md:order-1 md:mb-0 flex justify-center md:justify-start md:mt-4">
